@@ -65,10 +65,12 @@ public class ExecutePost {
 
     public static void main(String args[]) throws UnsupportedEncodingException {
 
+        String url = "https://api.helldiversgame.com/0.3/";
         //Url parameters
         String urlParameters = "action=" + URLEncoder.encode("get_campaign_status", "UTF-8");
-        String url = "https://api.helldiversgame.com/0.3/";
+
         System.setProperty("javax.net.ssl.trustStore", "/Users/wang/Desktop/arrowheadkeystore");
+
         System.out.println(excutePost(url, urlParameters));
 
     }
