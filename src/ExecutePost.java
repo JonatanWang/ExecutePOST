@@ -6,6 +6,7 @@ import java.net.*;
 /**
  * Created by wang on 19/04/16.
  */
+
 public class ExecutePost {
 
 
@@ -24,8 +25,8 @@ public class ExecutePost {
         try {
             //Create connection
             System.out.println("try");
-            URL urlTarget = new URL(url);
-            connection = (HttpURLConnection)urlTarget.openConnection();
+            URL urlArrowHeadMasterServer = new URL(url);
+            connection = (HttpURLConnection)urlArrowHeadMasterServer.openConnection();
             connection.setRequestMethod("POST");
             connection.setRequestProperty("Content-Type",
                     "application/x-www-form-urlencoded");
