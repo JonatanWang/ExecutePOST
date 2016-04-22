@@ -1,23 +1,19 @@
+import org.apache.commons.dbutils.QueryRunner;
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
-import org.apache.commons.dbutils.QueryRunner;
-import org.apache.commons.dbutils.handlers.BeanListHandler;
 
 /**
  * Created by wang on 22/04/16.
  */
-public class DerbyDatabaseDAO implements databaseDAO {
+public class DerbyDatabaseDAO implements DatabaseDAO {
 
     private Connection connection;
     private QueryRunner dbAccess = new QueryRunner();
     //private static final List<> EMPTY = new ArrayList<>();
 
-    String user = "me"; String passwd = "me";
-    String database = "arDB";
-    String server= "jdbc:mysql://localhost:3306/" + database + "?UseClientEnc=UTF8";
+    private String user = "me"; String passwd = "me";
+    private String database = "arDB";
+    private String server= "jdbc:mysql://localhost:3306/" + database + "?UseClientEnc=UTF8";
 
     @Override
     public long insertCampaignStatus(CampaignStatus campaignStatus) {

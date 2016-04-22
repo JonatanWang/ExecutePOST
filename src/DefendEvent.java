@@ -15,6 +15,21 @@ public class DefendEvent {
     private String status;
 
 
+    public  DefendEvent() {}
+
+    public DefendEvent(int season, int event_id, int start_time, int end_time, int region, int enemy, int points_max, int points, String status) {
+
+        this.season = season;
+        this.event_id = event_id;
+        this.start_time = start_time;
+        this.end_time = end_time;
+        this.region = region;
+        this.enemy = enemy;
+        this.points_max = points_max;
+        this.points = points;
+        this.status = status;
+    }
+
     public int getId() {
         return id;
     }
@@ -95,18 +110,6 @@ public class DefendEvent {
         this.status = status;
     }
 
-    public DefendEvent(int season, int event_id, int start_time, int end_time, int region, int enemy, int points_max, int points, String status) {
-
-        this.season = season;
-        this.event_id = event_id;
-        this.start_time = start_time;
-        this.end_time = end_time;
-        this.region = region;
-        this.enemy = enemy;
-        this.points_max = points_max;
-        this.points = points;
-        this.status = status;
-    }
 
     @Override
     public boolean equals(Object o) {

@@ -16,6 +16,8 @@ public class AttackEvent {
     private int players_at_start;
     private int max_event_id;
 
+    public AttackEvent() {}
+
     public AttackEvent(int season, int event_id, int start_time, int end_time, int enemy, int points_max, int points, String status, int players_at_start, int max_event_id) {
 
         this.season = season;

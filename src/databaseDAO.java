@@ -2,7 +2,7 @@
  * Created by wang on 22/04/16.
  */
 
-public interface databaseDAO extends DAO {
+public interface DatabaseDAO extends DAO {
 
     public long insertCampaignStatus(CampaignStatus campaignStatus);
     public long insertDefendEvent(DefendEvent campaignStatus);

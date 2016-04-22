@@ -12,6 +12,8 @@ public class CampaignStatus {
     private String status;
     private int introduction_order;
 
+    public CampaignStatus() {}
+
     public CampaignStatus(String time, int season, int points, int points_taken, int points_max, String status, int introduction_order) {
 
         this.time = time;
