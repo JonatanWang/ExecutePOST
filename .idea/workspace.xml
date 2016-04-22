@@ -609,7 +609,7 @@
       <workItem from="1461065074869" duration="1178000" />
       <workItem from="1461236988347" duration="586000" />
       <workItem from="1461269239519" duration="217000" />
-      <workItem from="1461311044085" duration="72000" />
+      <workItem from="1461311044085" duration="76000" />
     </task>
     <task id="LOCAL-00001" summary="change url &amp; urlParameters locations">
       <created>1461066199210</created>
@@ -625,7 +625,14 @@
       <option name="project" value="LOCAL" />
       <updated>1461311112034</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="change url &amp; urlParameters locations">
+      <created>1461311117648</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1461311117648</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -634,7 +641,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5094000" />
+    <option name="totallyTimeSpent" value="5098000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="70" y="35" width="1370" height="808" extended-state="0" />
