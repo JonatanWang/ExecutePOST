@@ -2,21 +2,30 @@ import java.io.*;
 import java.net.URL;
 import java.net.*;
 
+
 /**
  * Created by wang on 19/04/16.
  */
 public class ExecutePost {
 
 
-    public static String excutePost(String targetURL, String urlParameters)
+    private  String url;
+    private String urlParameters;
+
+    public ExecutePost(String url, String urlParameters) {
+        this.url = url;
+        this.urlParameters = urlParameters;
+    }
+
+    public  String fetchData()
     {
-        URL url;
+
         HttpURLConnection connection = null;
         try {
             //Create connection
             System.out.println("try");
-            url = new URL(targetURL);
-            connection = (HttpURLConnection)url.openConnection();
+            URL urlTarget = new URL(url);
+            connection = (HttpURLConnection)urlTarget.openConnection();
             connection.setRequestMethod("POST");
             connection.setRequestProperty("Content-Type",
                     "application/x-www-form-urlencoded");
@@ -63,17 +72,7 @@ public class ExecutePost {
         }
     }
 
-    public static void main(String args[]) throws UnsupportedEncodingException {
 
-        String url = "https://api.helldiversgame.com/0.3/";
-        //Url parameters
-        String urlParameters = "action=" + URLEncoder.encode("get_campaign_status", "UTF-8");
-
-        System.setProperty("javax.net.ssl.trustStore", "/Users/wang/Desktop/arrowheadkeystore");
-
-        System.out.println(excutePost(url, urlParameters));
-
-    }
 
 
 }
