@@ -15,7 +15,9 @@ public class DefendEvent {
     private String status;
 
 
-    public  DefendEvent() {}
+    public  DefendEvent() {
+
+    }
 
     public DefendEvent(int season, int event_id, int start_time, int end_time, int region, int enemy, int points_max, int points, String status) {
 

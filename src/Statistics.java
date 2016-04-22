@@ -24,7 +24,9 @@ public class Statistics {
     private int shots;
     private int hits;
 
-    public Statistics() {}
+    public Statistics() {
+
+    }
 
     public Statistics(int season, int season_duration, int enemy, int players, int total_unique_players,
                       int missions, int successful_missions, int total_mission_difficulty,
