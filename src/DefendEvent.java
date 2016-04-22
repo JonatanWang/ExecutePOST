@@ -9,7 +9,7 @@ public class DefendEvent {
     private int start_time;
     private int end_time;
     private int region;
-    private int eneny;
+    private int enemy;
     private int points_max;
     private int points;
     private String status;
@@ -63,12 +63,12 @@ public class DefendEvent {
         this.region = region;
     }
 
-    public int getEneny() {
-        return eneny;
+    public int getEnemy() {
+        return enemy;
     }
 
-    public void setEneny(int eneny) {
-        this.eneny = eneny;
+    public void setEnemy(int eneny) {
+        this.enemy = enemy;
     }
 
     public int getPoints_max() {
@@ -95,14 +95,14 @@ public class DefendEvent {
         this.status = status;
     }
 
-    public DefendEvent(int season, int event_id, int start_time, int end_time, int region, int eneny, int points_max, int points, String status) {
+    public DefendEvent(int season, int event_id, int start_time, int end_time, int region, int enemy, int points_max, int points, String status) {
 
         this.season = season;
         this.event_id = event_id;
         this.start_time = start_time;
         this.end_time = end_time;
         this.region = region;
-        this.eneny = eneny;
+        this.enemy = enemy;
         this.points_max = points_max;
         this.points = points;
         this.status = status;
@@ -121,7 +121,7 @@ public class DefendEvent {
         if (start_time != that.start_time) return false;
         if (end_time != that.end_time) return false;
         if (region != that.region) return false;
-        if (eneny != that.eneny) return false;
+        if (enemy != that.enemy) return false;
         if (points_max != that.points_max) return false;
         if (points != that.points) return false;
         return status != null ? status.equals(that.status) : that.status == null;
@@ -136,7 +136,7 @@ public class DefendEvent {
         result = 31 * result + start_time;
         result = 31 * result + end_time;
         result = 31 * result + region;
-        result = 31 * result + eneny;
+        result = 31 * result + enemy;
         result = 31 * result + points_max;
         result = 31 * result + points;
         result = 31 * result + (status != null ? status.hashCode() : 0);
@@ -152,7 +152,7 @@ public class DefendEvent {
                 ", start_time=" + start_time +
                 ", end_time=" + end_time +
                 ", region=" + region +
-                ", eneny=" + eneny +
+                ", eneny=" + enemy +
                 ", points_max=" + points_max +
                 ", points=" + points +
                 ", status='" + status + '\'' +
