@@ -4,7 +4,6 @@
 public class CampaignStatus {
 
     private int id;
-    private String time;
     private int season;
     private int points;
     private int points_taken;
@@ -16,9 +15,8 @@ public class CampaignStatus {
 
     }
 
-    public CampaignStatus(String time, int season, int points, int points_taken, int points_max, String status, int introduction_order) {
+    public CampaignStatus(int season, int points, int points_taken, int points_max, String status, int introduction_order) {
 
-        this.time = time;
         this.season = season;
         this.points = points;
         this.points_taken = points_taken;
@@ -35,13 +33,6 @@ public class CampaignStatus {
         this.id = id;
     }
 
-    public String getTime() {
-        return time;
-    }
-
-    public void setTime(String time) {
-        this.time = time;
-    }
 
     public int getSeason() {
         return season;
@@ -104,7 +95,6 @@ public class CampaignStatus {
         if (points_taken != that.points_taken) return false;
         if (points_max != that.points_max) return false;
         if (introduction_order != that.introduction_order) return false;
-        if (time != null ? !time.equals(that.time) : that.time != null) return false;
         return status != null ? status.equals(that.status) : that.status == null;
 
     }
@@ -112,7 +102,6 @@ public class CampaignStatus {
     @Override
     public int hashCode() {
         int result = id;
-        result = 31 * result + (time != null ? time.hashCode() : 0);
         result = 31 * result + season;
         result = 31 * result + points;
         result = 31 * result + points_taken;
@@ -126,7 +115,6 @@ public class CampaignStatus {
     public String toString() {
         return "CampaignStatus{" +
                 "id=" + id +
-                ", time='" + time + '\'' +
                 ", season=" + season +
                 ", points=" + points +
                 ", points_taken=" + points_taken +

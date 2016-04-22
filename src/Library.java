@@ -30,14 +30,13 @@ public class Library {
         }
     }
 
-    public void addNewCampaignStatus(String time, int season, int points, int points_taken, int points_max, String status, int introduction_order) {
+    public void addNewCampaignStatus(int season, int points, int points_taken, int points_max, String status, int introduction_order) {
 
         Thread thread = new Thread() {
 
             public void run() {
 
                 CampaignStatus campaignStatus = new CampaignStatus();
-                campaignStatus.setTime(time);
                 campaignStatus.setSeason(season);
                 campaignStatus.setPoints(points);
                 campaignStatus.setPoints_taken(points_taken);

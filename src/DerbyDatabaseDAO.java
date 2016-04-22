@@ -19,8 +19,8 @@ public class DerbyDatabaseDAO implements DatabaseDAO {
     public long insertCampaignStatus(CampaignStatus campaignStatus) {
         try{
             long id = dbAccess.update(connection, "insert into CampaignStatus(time, season, points, " +
-                    "points_taken, points_max, status, introduction_order) values (?,?,?,?,?,?,?)",
-                    campaignStatus.getTime(), campaignStatus.getSeason(), campaignStatus.getPoints(),
+                    "points_taken, points_max, status, introduction_order) values (?,?,?,?,?,?)",
+                    campaignStatus.getSeason(), campaignStatus.getPoints(),
                     campaignStatus.getPoints_taken(), campaignStatus.getPoints_max(), campaignStatus.getStatus(),
                     campaignStatus.getIntroduction_order());
 
