@@ -85,7 +85,9 @@ public class DerbyDatabaseDAO implements databaseDAO {
                     "kills, accidentals, shots, hits) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
                     statistics.getSeason(), statistics.getSeason_duration(), statistics.getEnemy(), statistics.getPlayers(),
                     statistics.getTotal_unique_players(), statistics.getMissions(), statistics.getSuccessful_missions(),
-                    statistics.getTotal_mission_difficulty(),);
+                    statistics.getTotal_mission_difficulty(), statistics.getCompleted_planets(), statistics.getDefend_events(),
+                    statistics.getSuccessful_defend_events(), statistics.getAttack_events(), statistics.getSuccessful_attack_events(),
+                    statistics.getDeaths(), statistics.getKills(), statistics.getAccidentals(), statistics.getShots(), statistics.getHits());
 
             return id;
 
